@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_NO_DEBUG -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -O2 -std=gnu++11 -Wall -Wextra -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I../QtWebApp/httpserver -I../QtWebApp/templateengine -I../QtWebApp/qtservice -I/home/eri/Qt/5.15.2/gcc_64/include -I/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork -I/home/eri/Qt/5.15.2/gcc_64/include/QtCore -I. -I/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++
+INCPATH       = -I. -I../QtWebApp/httpserver -I../QtWebApp/templateengine -I../QtWebApp/qtservice -I../../../../Qt/5.15.2/gcc_64/include -I../../../../Qt/5.15.2/gcc_64/include/QtNetwork -I../../../../Qt/5.15.2/gcc_64/include/QtCore -I. -I../../../../Qt/5.15.2/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/eri/Qt/5.15.2/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,10 +37,10 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = common1.0.0
-DISTDIR = /home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common/.tmp/common1.0.0
+DISTDIR = /home/eri/Documents/g3d-web-app/QtWebAppExample/common/.tmp/common1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/home/eri/Qt/5.15.2/gcc_64/lib
-LIBS          = $(SUBLIBS) -L/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common/../QtWebApp/ -lQtWebApp /home/eri/Qt/5.15.2/gcc_64/lib/libQt5Network.so /home/eri/Qt/5.15.2/gcc_64/lib/libQt5Core.so -lpthread   
+LIBS          = $(SUBLIBS) -L/home/eri/Documents/g3d-web-app/QtWebAppExample/common/../QtWebApp/ -lQtWebApp /home/eri/Qt/5.15.2/gcc_64/lib/libQt5Network.so /home/eri/Qt/5.15.2/gcc_64/lib/libQt5Core.so -lpthread   
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -66,181 +66,181 @@ OBJECTS       = main.o \
 DIST          = html-static/style.css \
 		html-static/favicon-32x32.png \
 		html-static/favicon.png \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/spec_pre.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/unix.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/linux.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/sanitize.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/gcc-base.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/g++-base.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/g++-unix.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/qconfig.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt_functions.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt_config.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/spec_post.prf \
-		../../.qmake.stash \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/toolchain.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/default_pre.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resolve_config.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/default_post.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qtquickcompiler.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/warn_on.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resources_functions.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resources.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/moc.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/unix/thread.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qmake_use.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/file_copies.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/testcase_targets.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/exceptions.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/yacc.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/lex.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/spec_pre.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/unix.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/linux.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/sanitize.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/gcc-base.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/g++-base.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/g++-unix.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/qconfig.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt_functions.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt_config.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/spec_post.prf \
+		../.qmake.stash \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/exclusive_builds.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/toolchain.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/default_pre.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/resolve_config.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/default_post.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qtquickcompiler.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/warn_on.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/resources_functions.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/resources.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/moc.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/unix/thread.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qmake_use.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/file_copies.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/testcase_targets.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/exceptions.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/yacc.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/lex.prf \
 		common.pro webconfigurator.h \
 		webconfiguratorpage.h \
 		httpsettings.hpp main.cpp \
@@ -254,363 +254,363 @@ TARGET        = ../../HttpService/common
 first: all
 ####### Build rules
 
-../../HttpService/common: /home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common/../QtWebApp/libQtWebApp.a $(OBJECTS)  
+../../HttpService/common: /home/eri/Documents/g3d-web-app/QtWebAppExample/common/../QtWebApp/libQtWebApp.a $(OBJECTS)  
 	@test -d ../../HttpService/ || mkdir -p ../../HttpService/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
-Makefile: common.pro /home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf /home/eri/Qt/5.15.2/gcc_64/mkspecs/features/spec_pre.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/unix.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/linux.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/sanitize.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/gcc-base.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/g++-base.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/g++-unix.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/qconfig.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt_functions.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt_config.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/spec_post.prf \
-		../../.qmake.stash \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/toolchain.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/default_pre.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resolve_config.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/default_post.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qtquickcompiler.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/warn_on.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resources_functions.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resources.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/moc.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/unix/thread.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qmake_use.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/file_copies.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/testcase_targets.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/exceptions.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/yacc.prf \
-		/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/lex.prf \
+Makefile: common.pro ../../../../Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf ../../../../Qt/5.15.2/gcc_64/mkspecs/features/spec_pre.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/unix.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/linux.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/sanitize.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/gcc-base.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/g++-base.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/common/g++-unix.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/qconfig.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xkbcommon_support_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt_functions.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt_config.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/spec_post.prf \
+		../.qmake.stash \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/exclusive_builds.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/toolchain.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/default_pre.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/resolve_config.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/default_post.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qtquickcompiler.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/warn_on.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/resources_functions.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/resources.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/moc.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/unix/thread.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/qmake_use.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/file_copies.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/testcase_targets.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/exceptions.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/yacc.prf \
+		../../../../Qt/5.15.2/gcc_64/mkspecs/features/lex.prf \
 		common.pro \
 		resources.qrc
 	$(QMAKE) -o Makefile common.pro -spec linux-g++ CONFIG+=qtquickcompiler
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/spec_pre.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/unix.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/linux.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/sanitize.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/gcc-base.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/gcc-base-unix.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/g++-base.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/common/g++-unix.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/qconfig.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xkbcommon_support_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt_functions.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt_config.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/spec_post.prf:
-../../.qmake.stash:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/exclusive_builds.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/toolchain.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/default_pre.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resolve_config.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/default_post.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qtquickcompiler.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/warn_on.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qt.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resources_functions.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/resources.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/moc.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/unix/thread.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/qmake_use.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/file_copies.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/testcase_targets.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/exceptions.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/yacc.prf:
-/home/eri/Qt/5.15.2/gcc_64/mkspecs/features/lex.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/spec_pre.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/unix.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/linux.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/sanitize.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/gcc-base.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/gcc-base-unix.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/g++-base.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/common/g++-unix.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/qconfig.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_location_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlmodels_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qmlworkerscript_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_webview_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xkbcommon_support_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt_functions.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt_config.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/linux-g++/qmake.conf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/spec_post.prf:
+../.qmake.stash:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/exclusive_builds.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/toolchain.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/default_pre.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/resolve_config.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/default_post.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/qtquickcompiler.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/warn_on.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/qt.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/resources_functions.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/resources.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/moc.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/unix/thread.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/qmake_use.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/file_copies.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/testcase_targets.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/exceptions.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/yacc.prf:
+../../../../Qt/5.15.2/gcc_64/mkspecs/features/lex.prf:
 common.pro:
 resources.qrc:
 qmake: FORCE
@@ -628,7 +628,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents resources.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents /home/eri/Qt/5.15.2/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../../../../Qt/5.15.2/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents webconfigurator.h webconfiguratorpage.h httpsettings.hpp $(DISTDIR)/
 	$(COPY_FILE) --parents main.cpp webconfigurator.cpp webconfiguratorpage.cpp $(DISTDIR)/
 
@@ -657,7 +657,7 @@ compiler_rcc_make_all: qrc_resources.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_resources.cpp
 qrc_resources.cpp: resources.qrc \
-		/home/eri/Qt/5.15.2/gcc_64/bin/rcc \
+		../../../../Qt/5.15.2/gcc_64/bin/rcc \
 		html/first.htm \
 		html/printing.html \
 		html/printinfo.html \
@@ -669,8 +669,8 @@ qrc_resources.cpp: resources.qrc \
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
-moc_predefs.h: /home/eri/Qt/5.15.2/gcc_64/mkspecs/features/data/dummy.cpp
-	g++ -pipe -O2 -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h /home/eri/Qt/5.15.2/gcc_64/mkspecs/features/data/dummy.cpp
+moc_predefs.h: ../../../../Qt/5.15.2/gcc_64/mkspecs/features/data/dummy.cpp
+	g++ -pipe -O2 -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h ../../../../Qt/5.15.2/gcc_64/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_webconfigurator.cpp moc_webconfiguratorpage.cpp
 compiler_moc_header_clean:
@@ -678,259 +678,259 @@ compiler_moc_header_clean:
 moc_webconfigurator.cpp: webconfigurator.h \
 		../QtWebApp/httpserver/httprequesthandler.h \
 		../QtWebApp/httpserver/httpglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
 		../QtWebApp/httpserver/httprequest.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QSettings \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QUuid \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QSettings \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QUuid \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
 		../QtWebApp/httpserver/httpresponse.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QString \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QString \
 		../QtWebApp/httpserver/httpcookie.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QList \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QList \
 		../QtWebApp/httpserver/httplistener.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
 		../QtWebApp/httpserver/httpconnectionhandler.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFlags \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QThread \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFlags \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QThread \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
 		../QtWebApp/httpserver/httpconnectionhandlerpool.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QObject \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMutex \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QObject \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMutex \
 		webconfiguratorpage.h \
 		../QtWebApp/templateengine/template.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFile \
 		../QtWebApp/templateengine/templateglobal.h \
 		httpsettings.hpp \
 		../QtWebApp/httpserver/staticfilecontroller.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QCache \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcache.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QCache \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcache.h \
 		moc_predefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/bin/moc
-	/home/eri/Qt/5.15.2/gcc_64/bin/moc $(DEFINES) --include /home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common/moc_predefs.h -I/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++ -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/QtWebApp/httpserver -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/QtWebApp/templateengine -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/QtWebApp/qtservice -I/home/eri/Qt/5.15.2/gcc_64/include -I/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork -I/home/eri/Qt/5.15.2/gcc_64/include/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include webconfigurator.h -o moc_webconfigurator.cpp
+		../../../../Qt/5.15.2/gcc_64/bin/moc
+	/home/eri/Qt/5.15.2/gcc_64/bin/moc $(DEFINES) --include /home/eri/Documents/g3d-web-app/QtWebAppExample/common/moc_predefs.h -I/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++ -I/home/eri/Documents/g3d-web-app/QtWebAppExample/common -I/home/eri/Documents/g3d-web-app/QtWebAppExample/QtWebApp/httpserver -I/home/eri/Documents/g3d-web-app/QtWebAppExample/QtWebApp/templateengine -I/home/eri/Documents/g3d-web-app/QtWebAppExample/QtWebApp/qtservice -I/home/eri/Qt/5.15.2/gcc_64/include -I/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork -I/home/eri/Qt/5.15.2/gcc_64/include/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include webconfigurator.h -o moc_webconfigurator.cpp
 
 moc_webconfiguratorpage.cpp: webconfiguratorpage.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QObject \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QObject \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
 		../QtWebApp/httpserver/httprequesthandler.h \
 		../QtWebApp/httpserver/httpglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
 		../QtWebApp/httpserver/httprequest.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QSettings \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QUuid \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QSettings \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QUuid \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
 		../QtWebApp/httpserver/httpresponse.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QString \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QString \
 		../QtWebApp/httpserver/httpcookie.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QList \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QList \
 		../QtWebApp/httpserver/httplistener.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
 		../QtWebApp/httpserver/httpconnectionhandler.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFlags \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QThread \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFlags \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QThread \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
 		../QtWebApp/httpserver/httpconnectionhandlerpool.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMutex \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMutex \
 		../QtWebApp/templateengine/template.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFile \
 		../QtWebApp/templateengine/templateglobal.h \
 		moc_predefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/bin/moc
-	/home/eri/Qt/5.15.2/gcc_64/bin/moc $(DEFINES) --include /home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common/moc_predefs.h -I/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++ -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/common -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/QtWebApp/httpserver -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/QtWebApp/templateengine -I/home/eri/Documents/work-printer/PrinterWebApp/QtWebAppExample/QtWebApp/qtservice -I/home/eri/Qt/5.15.2/gcc_64/include -I/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork -I/home/eri/Qt/5.15.2/gcc_64/include/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include webconfiguratorpage.h -o moc_webconfiguratorpage.cpp
+		../../../../Qt/5.15.2/gcc_64/bin/moc
+	/home/eri/Qt/5.15.2/gcc_64/bin/moc $(DEFINES) --include /home/eri/Documents/g3d-web-app/QtWebAppExample/common/moc_predefs.h -I/home/eri/Qt/5.15.2/gcc_64/mkspecs/linux-g++ -I/home/eri/Documents/g3d-web-app/QtWebAppExample/common -I/home/eri/Documents/g3d-web-app/QtWebAppExample/QtWebApp/httpserver -I/home/eri/Documents/g3d-web-app/QtWebAppExample/QtWebApp/templateengine -I/home/eri/Documents/g3d-web-app/QtWebAppExample/QtWebApp/qtservice -I/home/eri/Qt/5.15.2/gcc_64/include -I/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork -I/home/eri/Qt/5.15.2/gcc_64/include/QtCore -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include webconfiguratorpage.h -o moc_webconfiguratorpage.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -946,396 +946,396 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 
 ####### Compile
 
-main.o: main.cpp /home/eri/Qt/5.15.2/gcc_64/include/QtCore/QCoreApplication \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreapplication.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QDir \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdir.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfileinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
+main.o: main.cpp ../../../../Qt/5.15.2/gcc_64/include/QtCore/QCoreApplication \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QDir \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdir.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfileinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
 		webconfigurator.h \
 		../QtWebApp/httpserver/httprequesthandler.h \
 		../QtWebApp/httpserver/httpglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
 		../QtWebApp/httpserver/httprequest.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QSettings \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QUuid \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QSettings \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QUuid \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
 		../QtWebApp/httpserver/httpresponse.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QString \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QString \
 		../QtWebApp/httpserver/httpcookie.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QList \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QList \
 		../QtWebApp/httpserver/httplistener.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
 		../QtWebApp/httpserver/httpconnectionhandler.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFlags \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QThread \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFlags \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QThread \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
 		../QtWebApp/httpserver/httpconnectionhandlerpool.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QObject \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMutex \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QObject \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMutex \
 		webconfiguratorpage.h \
 		../QtWebApp/templateengine/template.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFile \
 		../QtWebApp/templateengine/templateglobal.h \
 		httpsettings.hpp \
 		../QtWebApp/httpserver/staticfilecontroller.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QCache \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcache.h
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QCache \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcache.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 webconfigurator.o: webconfigurator.cpp webconfigurator.h \
 		../QtWebApp/httpserver/httprequesthandler.h \
 		../QtWebApp/httpserver/httpglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
 		../QtWebApp/httpserver/httprequest.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QSettings \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QUuid \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QSettings \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QUuid \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
 		../QtWebApp/httpserver/httpresponse.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QString \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QString \
 		../QtWebApp/httpserver/httpcookie.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QList \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QList \
 		../QtWebApp/httpserver/httplistener.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
 		../QtWebApp/httpserver/httpconnectionhandler.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFlags \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QThread \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFlags \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QThread \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
 		../QtWebApp/httpserver/httpconnectionhandlerpool.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QObject \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMutex \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QObject \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMutex \
 		webconfiguratorpage.h \
 		../QtWebApp/templateengine/template.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFile \
 		../QtWebApp/templateengine/templateglobal.h \
 		httpsettings.hpp \
 		../QtWebApp/httpserver/staticfilecontroller.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QCache \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcache.h
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QCache \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcache.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o webconfigurator.o webconfigurator.cpp
 
 webconfiguratorpage.o: webconfiguratorpage.cpp webconfiguratorpage.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QObject \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QObject \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnamespace.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qconfig.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlogging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qflags.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstring.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qarraydata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringview.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpair.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvector.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainertools_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qpoint.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringlist.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qregexp.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmetatype.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qobject_impl.h \
 		../QtWebApp/httpserver/httprequesthandler.h \
 		../QtWebApp/httpserver/httpglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QtGlobal \
 		../QtWebApp/httpserver/httprequest.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qset.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QSettings \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QUuid \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QByteArray \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QHostAddress \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qhostaddress.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtnetwork-config.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qabstractsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qiodevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpSocket \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMultiMap \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QSettings \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qsettings.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTemporaryFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtemporaryfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfile.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QUuid \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/quuid.h \
 		../QtWebApp/httpserver/httpresponse.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QString \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QString \
 		../QtWebApp/httpserver/httpcookie.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QList \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QList \
 		../QtWebApp/httpserver/httplistener.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QTcpServer \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qtcpserver.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QBasicTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h \
 		../QtWebApp/httpserver/httpconnectionhandler.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFlags \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTimer \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QThread \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/QSslConfiguration \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslconfiguration.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslsocket.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslerror.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qsslcertificate.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcryptographichash.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdatetime.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtNetwork/qssl.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFlags \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTimer \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QThread \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qthread.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qdeadlinetimer.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qelapsedtimer.h \
 		../QtWebApp/httpserver/httpconnectionhandlerpool.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QMutex \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QMutex \
 		../QtWebApp/templateengine/template.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QFile \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QRegExp \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QIODevice \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QTextCodec \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qtextcodec.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QFile \
 		../QtWebApp/templateengine/templateglobal.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QDebug \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/QCoreApplication \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qcoreapplication.h \
-		/home/eri/Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QDebug \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/QCoreApplication \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/5.15.2/gcc_64/include/QtCore/qeventloop.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o webconfiguratorpage.o webconfiguratorpage.cpp
 
 qrc_resources.o: qrc_resources.cpp 
