@@ -1,0 +1,49 @@
+<form enctype="multipart/form-data" method="post" action="/printing.html" accept-charset="utf-8">
+	<div class="container">
+		
+		<!-- i put the values for the readonly for place holders and testing purposes. will modify it later -->
+
+		<div class="name">
+			<label for="name">Name: </label>
+			<input type="text" id="name" name="name" value="test1.g3d" readonly><br>
+
+			<label for="sliced-by">Sliced By: </label>
+			<input type="text" id="sliced-by" name="sliced-by" value="T200" readonly><br><br>
+		</div>
+
+		<div class="layers-height">
+			<label for="layers">Total Layers: </label>
+			<input type="text" id="layers" name="layers" value="100" readonly><br>
+
+			<label for="height">Layer Height: </label>
+			<input type="text" id="height" name="height" value="120um" readonly><br><br><br>
+		</div>
+
+		<div class="initial">
+			<label for="number-of-layers">Initial No. Layers: </label>
+			<input type="text" id="number-of-layers" name="number-of-layers"><br>
+
+			<label for="initial-cure-time">Initial Cure Time: </label>
+			<input type="text" id="initial-cure-time" name="initial-cure-time"><br><br>
+
+			<label for="cure-time">Cure Time: </label>
+			<input type="text" id="cure-time" name="cure-time"><br><br>
+		</div>
+
+		<div class="material">
+			<label for="material">Material: </label>
+			<input type="text" id="material" name="material" value="Gray Premum Resin" readonly><br><br>
+		</div>
+
+		<div class="estimated">
+			<label for="estimated">Estimated Print Time: </label>
+			<input type="text" id="estimated" name="estimated" value="00h : 46 mins: 05 secs"readonly><br><br>
+		</div>
+		
+		<div class="btn">
+			<a href="/index.html">Cancel</a>
+			<input type="submit" value="Print">
+		</div>
+</div>
+
+</form>

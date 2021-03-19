@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{Title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--<link rel="stylesheet" type="text/css" href="common/html-static/style.css"> 
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/> 
+
+styles won't work when i put it in external file. i don't know if it's a bug. i'll just fix it later. -->
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis&family=Merriweather+Sans:wght@500&display=swap');
+
+form {
+    outline: none;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'Dosis', sans-serif;
+    background-color: white;
+}
+
+h1 {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 2em;
+    background: none;
+}
+
+h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+* {
+    outline: none;
+}
+div.content {
+    width: 800px;
+    margin: 5em auto;
+    background-color: white;s
+    overflow: hidden;
+    padding: 16px;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 700px)
+{
+    body { background-color: #fff; }
+    div.content  {
+        width: auto; margin: 0 auto; border-radius: 0; padding: 1em;
+    }
+}
+
+.menu {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 20px 0;
+    clear: both;
+    padding: 5px 0;
+    color: black;
+    font-size: 1em;
+    background: none;
+    text-align: center;
+    display: flex;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+div.sep {
+    height:1px;
+    border-bottom: 1px solid #eee;
+}
+
+.menuitem {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menuitem a {
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    padding: 0px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
+}
+
+.name{
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.layers-height {
+
+
+
+    width: 300px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 150px;
+
+}
+
+.initial {
+    width: 300px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 215px;
+
+}
+
+.material {
+    width: 300px;
+    padding: 12px 20px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 85px;
+
+}
+
+.estimated {
+    width: 300px;
+    padding: 12px 20px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    height: 85px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+<div class="content">
+        <a href="index.html"><div class="logo"></div><h1>{Title}</h1></a>
+        {if Navigation}
+                <ul class="menu">
+                        {loop Items}
+                                <li class = "menuitem">
+                                        <a href={Items.href}>{Items.name}</a>
+                                </li>
+                        {end Items}
+                </ul>
+        {end Navigation}
+        {Content}
+</div>
+</body>
+</html>
