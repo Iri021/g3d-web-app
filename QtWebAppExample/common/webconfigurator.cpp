@@ -52,20 +52,4 @@ void WebConfigurator::service(HttpRequest &request, HttpResponse &response)
         response.redirect("/index.html");
         return;
     }
-    //    else if(path=="/print") {
-    //        FileUploadController().service(request, response);
-    //        //response.redirect("/index.html");
-    //        //return;
-    //    }
-    if(path.startsWith("/style.css") ||
-            path.startsWith("/g3d.webp") ||
-            path.startsWith("/g3d.webp")){
-        return m_staticFileController->service(request, response);
-    }
-    response.setStatus(404,"Not found");
-
-
 }
-
-
-

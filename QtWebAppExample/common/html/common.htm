@@ -44,7 +44,7 @@ h2 {
 div.content {
     width: 800px;
     margin: 5em auto;
-    background-color: white;s
+    background-color: white;
     overflow: hidden;
     padding: 16px;
 }
@@ -101,45 +101,49 @@ p {
 }
 
 .container {
+    display: flex;
     width: 100%;
     border-radius: 5px;
     background-color: none;
     padding: 20px;
+    flex-flow: column wrap;
 }
 
 .name{
 
-    width: 100%;
+    width: 400px;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: auto;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .layers-height {
-
-
-
-    width: 300px;
+    align-content: flex-start;
+    width: 270px;
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: left;
-    height: 150px;
+    text-align: center;
+    height: 125px;
+    margin: auto;
 
 }
 
 .initial {
-    width: 300px;
+    width: 335px;
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: left;
-    height: 215px;
+    text-align: center;
+    height: 135px;
+    align-content: flex-start;
+    margin: auto;
 
 }
 
@@ -150,8 +154,9 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: left;
-    height: 85px;
+    text-align: center;
+    height: 65px;
+    align-content: flex-end;
 
 }
 
@@ -162,7 +167,7 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
     height: 85px;
 }
 
