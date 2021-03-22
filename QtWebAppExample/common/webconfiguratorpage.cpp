@@ -32,7 +32,7 @@ Template WebConfiguratorPage::commonTemplate() const
         /* And the menu itself will be formed using a cyclic addition
          *  points, which is also reflected by a special construction in the  common.htm file
          * */
-        common.loop("Items", 4);
+        common.loop("Items", 3);
 
         common.setVariable("Items0.href", "/index.html");
         common.setVariable("Items0.name", "Print");
@@ -43,11 +43,11 @@ Template WebConfiguratorPage::commonTemplate() const
         common.setVariable("Items2.href", "/second.html");
         common.setVariable("Items2.name", "Settings");
 
-        common.setVariable("Items3.href", "/printinfo.html");
-        common.setVariable("Items3.name", "PrintInfo");
+        //common.setVariable("Items3.href", "/printinfo.html");
+        //common.setVariable("Items3.name", "PrintInfo");
 
-        common.setVariable("Items4.href", "/printing.html");
-        common.setVariable("Items4.name", "printing");
+        //common.setVariable("Items4.href", "/printing.html");
+        //common.setVariable("Items4.name", "printing");
     }
     return common;
 }
