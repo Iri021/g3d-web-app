@@ -13,7 +13,11 @@ styles won't work when i put it in external file. i don't know if it's a bug. i'
       
 
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+.file-upload {
+    color: white;
 
+
+}
 form {
     outline: none;
     text-align: center;
@@ -22,13 +26,13 @@ form {
 body {
     margin: 0; padding: 0;
     font-family: 'Questrial', sans-serif;
-    background-color: white;
+    background-color: #10111c;
 }
 
 h1 {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 2em;
     background: none;
 }
@@ -44,13 +48,13 @@ h2 {
 div.content {
     width: 800px;
     margin: 5em auto;
-    background-color: white;
+    background-color: none;
     overflow: hidden;
     padding: 16px;
 }
 
 a:link, a:visited {
-    color: black;
+    color: #747474;
     text-decoration: none;
 }
 
@@ -92,12 +96,14 @@ div.sep {
     float: left;
     width: 120px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 p {
     margin: 20px;
     padding: 0px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .container {
@@ -107,31 +113,42 @@ p {
     background-color: none;
     padding: 20px;
     flex-flow: column wrap;
+    position: relative;
 }
 
 .name{
 
-    width: 400px;
+    width: 620px;
     padding: 12px 20px;
-    margin: auto;
+    margin: inherit;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
+    color: #747474;
+    font-weight: bold;
+    border-color: #2991d0;
+    border-width: medium;
+    position: relative;
 }
 
 .layers-height {
     align-content: flex-start;
-    width: 270px;
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
     height: 125px;
-    margin: auto;
-
+    margin: 8px;
+    color: #747474;
+    font-weight: bold;
+    border-color: #2991d0;
+    border-width: medium;
+    margin-right: 80%;
+    position: relative;
+    width: 290px;
 }
 
 .initial {
@@ -144,31 +161,54 @@ p {
     height: 180px;
     align-content: flex-start;
     margin: auto;
+    color: #747474;
+    font-weight: bold;
+    border-color: #2991d0;
+    border-width: medium;
+    margin-right: 80%;
+    position: relative;
 
 }
 
 .material {
     width: 300px;
-    padding: 12px 20px;
-    margin: auto;
+    padding: 15px 25px;
+    margin: 40%;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
-    height: 65px;
+    height: 115px;
     align-content: flex-end;
+    color: #747474;
+    font-weight: bold;
+    border-color: #2991d0;
+    border-width: medium;
+    position: relative;
+    margin-top: -310px;
+    
 
 }
 
 .estimated {
     width: 300px;
     padding: 12px 20px;
-    margin: auto;
+    margin: 40%;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
-    height: 85px;
+    height: 100px;
+    color: #747474;
+    font-weight: bold;
+    border-color: #2991d0;
+    border-width: medium;
+    position: relative;
+    margin-top: -303px;
+}
+.btn{
+    position: relative;
+    margin-top: -300px;
 }
 
 a:hover{
