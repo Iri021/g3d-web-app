@@ -13,6 +13,9 @@ styles won't work when i put it in external file. i don't know if it's a bug. i'
       
 
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+
 .file-upload {
     color: white;
 
@@ -22,6 +25,13 @@ form {
     outline: none;
     text-align: center;
 }
+
+.uploading-file {
+    outline: none;
+    text-align: center;
+    margin-top: 200px;
+}
+
 
 body {
     margin: 0; padding: 0;
@@ -118,20 +128,21 @@ p {
 
 .name{
 
-    width: 620px;
+    width: 610px;
     padding: 12px 20px;
     margin: inherit;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: justify;
     color: #747474;
     font-weight: bold;
     border-color: #2991d0;
-    border-width: medium;
+    border-width: thin;
     position: relative;
-    background-color: rgb(211,211,211);
+    background-color: #10111c;
+    margin-left: 10px;
 }
 
 .layers-height {
@@ -146,11 +157,11 @@ p {
     color: #747474;
     font-weight: bold;
     border-color: #2991d0;
-    border-width: medium;
+    border-width: thin;
     margin-right: 80%;
     position: relative;
     width: 290px;
-    background-color: rgb(211,211,211);
+    background-color: #10111c;
 }
 
 .initial {
@@ -166,54 +177,56 @@ p {
     color: #747474;
     font-weight: bold;
     border-color: #2991d0;
-    border-width: medium;
+    border-width: thin;
     margin-right: 80%;
     position: relative;
-    background-color: rgb(211,211,211);
+    background-color: #10111c;
+    font-size: 14px;
 
 }
 
 .material {
     width: 300px;
-    padding: 15px 25px;
+    padding: 2em;
     margin: 40%;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
-    height: 115px;
+    height: 122px;
     align-content: flex-end;
     color: #747474;
     font-weight: bold;
     border-color: #2991d0;
-    border-width: medium;
+    border-width: thin;
     position: relative;
     margin-top: -310px;
-    background-color: rgb(211,211,211);
+    background-color: #10111c;
     
 
 }
 
 .estimated {
     width: 300px;
-    padding: 12px 20px;
+    padding: 3em;
     margin: 40%;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
-    height: 100px;
+    height: 177px;
     color: #747474;
     font-weight: bold;
     border-color: #2991d0;
-    border-width: medium;
+    border-width: thin;
     position: relative;
-    margin-top: -303px;
-    background-color: rgb(211,211,211);
+    margin-top: -310px;
+    background-color: #10111c;
 }
 .btn{
     position: relative;
     margin-top: -300px;
+        margin-right: -135px
 }
 
 a:hover{
@@ -323,11 +336,17 @@ input[type="text"]
 {
     font-size: 18px;
     font-family: 'Questrial', sans-serif;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 
-</style>
 
+</style>
 </head>
 <body>
 <div class="content">
