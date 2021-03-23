@@ -1,11 +1,14 @@
-<p>Select a File to Print:</p>
-
 <form enctype="multipart/form-data" method="post" action="/printinfo.html" accept-charset="utf-8">
-  <input type="file" id="myFile" name="filename" accept=".g3d" class="file-upload">
-  <input type="submit" value="Upload" class="print-btn">
+  <label class="choose-file">
+    Select a File to Print:
+    <input type="file" id="myFile" name="filename" accept=".g3d" class="file-upload" style="display:none">
+  </label>
+  <label class="submit-file">
+    Upload
+    <input type="submit" class="btn-print" style="display:none">
+  </label>
 </form>
 
- 
 
 
 
