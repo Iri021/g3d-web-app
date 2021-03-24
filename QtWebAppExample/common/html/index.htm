@@ -1,14 +1,23 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <form class="uploading-file" enctype="multipart/form-data" method="post" action="/printinfo.html" accept-charset="utf-8">
   <label class="choose-file">
     Select a File to Print:
     <input type="file" id="myFile" name="filename" accept=".g3d" class="file-upload" style="display:none">
   </label>
+  <input id="uploadFile" placeholder="No File" disabled="disabled" />
   <label class="submit-file">
     Upload
     <div id="file-upload-filename"></div>
     <input type="submit" class="btn-print" style="display:none">
   </label>
 </form>
+
+<script>
+  document.getElementById("myFile").onchange = function() {
+  document.getElementById("uploadFile").value = this.value;
+};
+
+</script>
 
 
 
